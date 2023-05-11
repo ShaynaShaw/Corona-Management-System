@@ -1,0 +1,40 @@
+﻿@page
+@model CoronaSystem.Pages.Clients.IndexModel
+@{
+}
+
+<br>
+<h2>List of Clients</h2>
+<a class='btn btn-primary btn-sm' href='/Clients/Create'>New Client</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Phone</th>
+            <th>MobilePhone</th>
+            <th>Address</th>
+            <th>DateOfBirth</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model.listClients)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.firstName</td>
+                <td>@item.lastName</td>
+                <td>@item.phone</td>
+                <td>@item.mobilePhone</td>
+                <td>@item.address</td>
+                <td>@item.dateOfBirth</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Clients/Details?id=@item.id">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

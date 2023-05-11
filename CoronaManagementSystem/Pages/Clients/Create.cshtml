@@ -1,0 +1,150 @@
+﻿@page
+@model CoronaSystem.Pages.Clients.CreateModel
+@{
+}
+
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create New Client</h2>
+
+@if (Model.errorMessage.Length > 0)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>@Model.errorMessage</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<form method="POST">
+    <div class="row mb-3">
+        <label class="col-sm-6 col-form-label">Id</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="id" value="@Model.clientInfo.id" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-6 col-form-label">FirstName</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="firstName" value="@Model.clientInfo.firstName" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-6 col-form-label">LastName</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="lastName" value="@Model.clientInfo.lastName" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-6 col-form-label">Phone</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="phone" value="@Model.clientInfo.phone" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-6 col-form-label">MobilePhone</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="mobilePhone" value="@Model.clientInfo.mobilePhone" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-6 col-form-label">Address</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="address" value="@Model.clientInfo.address" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-6 col-form-label">DateOfBirth</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="dateOfBirth" value="@Model.clientInfo.dateOfBirth" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-6 col-form-label">FirstVaccine</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="firstVaccine" value="@Model.clientInfo.firstVaccine" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-6 col-form-label">SecondVaccine</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="secondVaccine" value="@Model.clientInfo.secondVaccine" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-6 col-form-label">ThirdVaccine</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="thirdVaccine" value="@Model.clientInfo.thirdVaccine" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-6 col-form-label">FourthVaccine</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="fourthVaccine" value="@Model.clientInfo.fourthVaccine" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-6 col-form-label">FirstVaccineManufacturer</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="firstVaccineManufacturer" value="@Model.clientInfo.firstVaccineManufacturer" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-6 col-form-label">SecondVaccineManufacturer</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="secondVaccineManufacturer" value="@Model.clientInfo.secondVaccineManufacturer" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-6 col-form-label">ThirdVaccineManufacturer</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="thirdVaccineManufacturer" value="@Model.clientInfo.thirdVaccineManufacturer" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-6 col-form-label">FourthVaccineManufacturer</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="fourthVaccineManufacturer" value="@Model.clientInfo.fourthVaccineManufacturer" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-6 col-form-label">PositiveResult</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="positiveResult" value="@Model.clientInfo.positiveResult" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-6 col-form-label">NegativeResult</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="negativeResult" value="@Model.clientInfo.negativeResult" />
+        </div>
+    </div>
+
+
+    @if (Model.successMessage.Length > 0)
+    {
+        <div class="row mb-3">
+            <div class="col-sm-9">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>@Model.successMessage</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+        
+    }
+
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="col-sm-3 d-grid">
+            <a type="submit" class="btn btn-outline-primary" href="/Clients/Index" role="button">Cancel</a>
+        </div>
+    </div>
+</form>
+
+
+
