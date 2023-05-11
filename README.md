@@ -1,13 +1,13 @@
 # Corona-Management-System
 תיקיה זו מכילה שני חלקים:
 
-החלק הראשון - הקובץ TweeterTowers זוהי תוכנית עבור חברת טוויטר לחקר סוגי מגדלים שונים. התכנית נכתבה בשפת פייתון בסביבת העבודה Visual Studio.
+החלק הראשון - הקובץ TweeterTowers, זוהי תוכנית עבור חברת טוויטר לחקר סוגי מגדלים שונים. התכנית נכתבה בשפת פייתון בסביבת העבודה Visual Studio.
 
-החלק השני - התיקייה CoronaManagementSystem זוהי מערכת לניהול מאגר קורונה עבור קופת חולים גדולה. במערכת התמקדתי בעיקר בצד השרת וביצירת בסיס הנתונים. בנוסף הוספתי צד לקוח בסיסי על מנת להציג את ביצועי המערכת. המערכת מציגה את החברים בקופת החולים, ומנהלת את ההכנסה של הרשומות במאגר המידע. בנוסף, המערכת אוגרת מידע בנוגע למגיפת הקורונה עבור החברים בקופת החולים.
+החלק השני - התיקייה CoronaManagementSystem, זוהי מערכת לניהול מאגר קורונה עבור קופת חולים גדולה. במערכת התמקדתי בעיקר בצד השרת וביצירת בסיס הנתונים. בנוסף הוספתי צד לקוח בסיסי על מנת להציג את ביצועי המערכת. המערכת מציגה את החברים בקופת החולים, ומנהלת את ההכנסה של הרשומות במאגר המידע. בנוסף, המערכת אוגרת מידע בנוגע למגיפת הקורונה עבור החברים בקופת החולים.
 
 המערכת תומכת בהוספת חבר חדש לקופה וכן בשליפת רשומות, כלומר הצגת פרטי חבר. תוך שימת לב לתקינות הקלטים ומניעת טעויות. 
 
-עבור יצירת המערכת השתמשתי בסביבת העבודה Visual Studio, יצרתי פרויקט מסוג asp.net (שזוהי טכנולוגיה שלא הכרתי, למדתי אותה בשביל ליצור איתה את הפרויקט ומאוד נהניתי להכיר טכנולוגיה חדשה שיש לה המון כלים להציע ומעטפת מאוד נוחה לשימוש🙂)ואת קוד השרת כתבתי בשפת C#. 
+עבור יצירת המערכת השתמשתי בסביבת העבודה Visual Studio, יצרתי פרויקט מסוג asp.net (שזוהי טכנולוגיה שלא הכרתי, למדתי אותה בשביל ליצור איתה את הפרויקט ומאוד נהניתי להכיר טכנולוגיה חדשה שיש לה המון כלים להציע ומעטפת מאוד נוחה לשימוש🙂) ואת קוד השרת כתבתי בשפת C#. 
 
 Download and Install VS:
 
@@ -48,6 +48,8 @@ https://www.microsoft.com/en-us/sql-server/sql-server-downloads
 ![image](https://github.com/ShaynaShaw/Corona-Management-System/assets/57362183/1f146962-3787-4784-bfdf-d59be30eebee)
 
 
+
 תודה רבה!
+
 שיינא שאו
 
